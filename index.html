@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>LYRICA — английский по музыке</title>
+  <meta name="description" content="LYRICA — английский по музыке: 60 песен на шести уровнях CEFR, 624 слова, 40 тем теории, 300 заданий, план на 15 минут, SRS, Listening Lab, рабочая тетрадь, сертификаты и PWA.">
+  <meta name="theme-color" content="#F3EBDD">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2317130F'/%3E%3Ccircle cx='32' cy='32' r='21' fill='%23E8552F'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%2317130F' stroke-opacity='.35'/%3E%3Ccircle cx='32' cy='32' r='9' fill='none' stroke='%2317130F' stroke-opacity='.35'/%3E%3Ccircle cx='32' cy='32' r='3' fill='%23F3EBDD'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-expanded.css">
+</head>
+<body>
+  <a class="skip-link" href="#view">К содержанию</a>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="shell header-inner">
+      <a class="brand" href="#/" aria-label="LYRICA — на главную">
+        <span class="brand-record" aria-hidden="true"><i></i><b></b></span>
+        <span class="brand-copy">
+          <strong>LYRICA</strong>
+          <small>english through music</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#/" data-route="/" class="nav-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-10.5Z"/></svg>
+          <span>Главная</span>
+        </a>
+        <a href="#/songs" data-route="/songs" class="nav-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+          <span>Песни</span>
+        </a>
+        <a href="#/levels" data-route="/levels" class="nav-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.5-9 4.5-9-4.5L12 3Z"/><path d="m3 12 9 4.5 9-4.5M3 16.5 12 21l9-4.5"/></svg>
+          <span>Уровни</span>
+        </a>
+        <a href="#/theory" data-route="/theory" class="nav-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4a1 1 0 0 0-1-1H6.5A2.5 2.5 0 0 0 4 5.5v14Z"/><path d="M8 7h8M8 11h5M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
+          <span>Теория</span>
+        </a>
+        <a href="#/vocabulary" data-route="/vocabulary" class="nav-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4a1 1 0 0 0-1-1H6.5A2.5 2.5 0 0 0 4 5.5v14Z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5M8 7h8M8 11h5"/></svg>
+          <span>Словарь</span>
+        </a>
+        <a href="#/progress" data-route="/progress" class="nav-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+          <span>Прогресс</span>
+        </a>
+      </nav>
+
+      <div class="header-tools">
+        <button class="theme-toggle" type="button" data-action="toggle-theme" aria-label="Переключить тему" title="Тема">
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.5A8.5 8.5 0 0 1 8.5 4 8.5 8.5 0 1 0 20 15.5Z"/></svg>
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <a class="streak-chip" href="#/progress" aria-label="Дней подряд">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22c4 0 7-2.7 7-6.5 0-2.8-1.6-5.2-3.5-7.1-.4 1.6-1.3 2.7-2.5 3.4.2-3.8-1.6-7.1-4-9.3.1 3.5-1 5.6-2.4 7.4C5.2 11.4 5 12.9 5 14.5 5 19.3 8 22 12 22Z"/></svg>
+          <b id="streakValue">0</b>
+        </a>
+        <button class="avatar-btn" type="button" data-action="open-profile" aria-label="Профиль и настройки" title="Профиль и настройки">
+          <span id="avatarLetter">А</span>
+          <i aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+  <noscript>
+    <div class="shell" style="padding:48px 0">
+      <div class="panel">
+        <h1 class="serif" style="font-size:42px">Для LYRICA нужен JavaScript</h1>
+        <p style="margin-top:10px;color:#7d7266">Включи JavaScript в браузере — и песни, словарь с озвучкой и задания станут доступны.</p>
+      </div>
+    </div>
+  </noscript>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="#/">
+          <span class="brand-record" aria-hidden="true"><i></i><b></b></span>
+          <span class="brand-copy"><strong>LYRICA</strong><small>english through music</small></span>
+        </a>
+        <p>Английский не по учебнику, а по любимым песням.<br>Шесть уровней, живая лексика и практика каждый день.</p>
+      </div>
+      <div class="footer-links">
+        <span>Навигация</span>
+        <a href="#/songs">Песни</a>
+        <a href="#/levels">Уровни</a>
+        <a href="#/theory">Теория</a>
+        <a href="#/vocabulary">Словарь</a>
+        <a href="#/progress">Прогресс</a>
+      </div>
+      <div class="footer-note">
+        <span>О проекте</span>
+        <p>Учебный музыкальный проект. Тексты песен полностью не воспроизводятся: задания работают с лексикой, смыслом и языковыми паттернами.</p>
+        <small>© 2026 LYRICA</small>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-dock" aria-label="Мобильная навигация">
+    <a href="#/" data-route="/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-10.5Z"/></svg>
+      <span>Главная</span>
+    </a>
+    <a href="#/songs" data-route="/songs">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+      <span>Песни</span>
+    </a>
+    <a href="#/levels" data-route="/levels">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.5-9 4.5-9-4.5L12 3Z"/><path d="m3 12 9 4.5 9-4.5M3 16.5 12 21l9-4.5"/></svg>
+      <span>Уровни</span>
+    </a>
+    <a href="#/theory" data-route="/theory">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4a1 1 0 0 0-1-1H6.5A2.5 2.5 0 0 0 4 5.5v14Z"/><path d="M8 7h8M8 11h5M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
+      <span>Теория</span>
+    </a>
+    <a href="#/vocabulary" data-route="/vocabulary">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4a1 1 0 0 0-1-1H6.5A2.5 2.5 0 0 0 4 5.5v14Z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5M8 7h8M8 11h5"/></svg>
+      <span>Словарь</span>
+    </a>
+    <a href="#/progress" data-route="/progress">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+      <span>Прогресс</span>
+    </a>
+  </nav>
+
+  <div id="audioDock" class="audio-dock" hidden>
+    <span class="audio-dock__eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <div class="audio-dock__copy">
+      <strong>Pronunciation</strong>
+      <span id="audioDockLabel">Озвучиваем словарь</span>
+    </div>
+    <button class="audio-dock__stop" type="button" data-action="stop-audio" aria-label="Остановить озвучку">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+    </button>
+  </div>
+
+  <div id="musicPlayer" class="music-player" hidden aria-live="polite"></div>
+  <audio id="previewAudio" preload="metadata"></audio>
+
+  <div id="modalRoot"></div>
+  <div id="toastRoot" class="toast-root" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/content/a1.js"></script>
+  <script src="js/content/a2.js"></script>
+  <script src="js/content/b1.js"></script>
+  <script src="js/content/b2.js"></script>
+  <script src="js/content/c1.js"></script>
+  <script src="js/content/c2.js"></script>
+  <script src="js/content/enrich.js"></script>
+  <script src="js/content/task-details.js"></script>
+  <script src="js/content/theory.js"></script>
+  <script src="js/content/youtube.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js").catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>
